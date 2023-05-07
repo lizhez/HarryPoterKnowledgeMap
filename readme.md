@@ -6,7 +6,7 @@ person_info -- 文件夹是有关人物信息数据的收集和处理
 harrypotter -- 文件夹是后端项目，使用srpingboot+neo4j，环境是jdk8
 vue_neo4j -- 文件夹是前端项目，使用vue2+jQuery组件+element ui组件+echarts图表
 
-数据库构建的语句：
+数据库构建：
 load csv from 'file:///harrypotterdata.csv' as line
 create (:entityRelation {source:line[0],target:line[1],label:line[2]})
 load csv from 'file:///harrypotternode.csv' as line
